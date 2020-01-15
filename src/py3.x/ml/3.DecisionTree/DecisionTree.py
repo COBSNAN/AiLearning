@@ -13,6 +13,7 @@ import operator
 from math import log
 import decisionTreePlot as dtPlot
 from collections import Counter
+import os
 
 
 def createDataSet():
@@ -387,7 +388,7 @@ def ContactLensesTest():
     """
 
     # 加载隐形眼镜相关的 文本文件 数据
-    fr = open('data/3.DecisionTree/lenses.txt')
+    fr = open('D:/cobs/program/git/AiLearning/src/py3.x/ml/3.DecisionTree/data/3.DecisionTree/lenses.txt')
     # 解析数据，获得 features 数据
     lenses = [inst.strip().split('\t') for inst in fr.readlines()]
     # 得到数据的对应的 Labels

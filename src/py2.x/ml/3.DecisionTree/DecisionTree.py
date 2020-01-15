@@ -387,4 +387,4 @@ def get_tree_height(tree):
 
 if __name__ == "__main__":
     fishTest()
-    # ContactLensesTest()
+    ContactLensesTest()
