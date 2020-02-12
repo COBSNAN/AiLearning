@@ -176,6 +176,7 @@ def test():
 
 
 def classify_vector(in_x, weights):
+
     """
     最终的分类函数，根据回归系数和特征向量来计算 Sigmoid 的值，大于0.5函数返回1，否则返回0
     :param in_x: 特征向量，features
@@ -219,6 +220,7 @@ def colic_test():
             continue    # 这里如果就一个空的元素，则跳过本次循环
         line_arr = [float(curr_line[i]) for i in range(21)]
         if int(classify_vector(np.array(line_arr), train_weights)) != int(curr_line[21]):
+
             error_count += 1
     error_rate = error_count / num_test_vec
     print('the error rate is {}'.format(error_rate))
@@ -241,5 +243,5 @@ if __name__ == '__main__':
     # 请依次运行下面三个函数做代码测试
     test()
     # colic_test()
-    # multi_test()
+    multi_test()
 
